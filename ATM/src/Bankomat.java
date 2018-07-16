@@ -41,55 +41,55 @@ public class Bankomat {
 
 	if (a > 99 && a < 1000)
 	{	System.out.println("1 - stan konta");
-		System.out.println("2 - wp³aæ");
-		System.out.println("3 - wyp³aæ");
+		System.out.println("2 - wpï¿½aï¿½");
+		System.out.println("3 - wypï¿½aï¿½");
 		System.out.print("wybierz:");
 		b = scanner.nextInt();
 		System.out.println("wybrano " + b);
 		
 		if (b == 1) //stan konta
 		{
-			System.out.println(card[0].getIleKasy() + "z³");
+			System.out.println(card[0].getIleKasy() + "zï¿½");
 		}
 		
-		else if (b == 2) //wp³ata
+		else if (b == 2) //wpï¿½ata
 		{
-			System.out.print("wprowad¿ kwotê wp³aty:");
+			System.out.print("wprowadï¿½ kwotï¿½ wpï¿½aty:");
 			c = scanner.nextInt();
 			if (c >= 10)
 			{card[0].add(c);
-			System.out.println("wp³acono " + c + "z³");
-			System.out.println("stan konta po " + card[0].getIleKasy() + "z³");
+			System.out.println("wpï¿½acono " + c + "zï¿½");
+			System.out.println("stan konta po " + card[0].getIleKasy() + "zï¿½");
 			}
 			else 
 			System.out.println("za niska kwota");
 		}
 		
-		else if (b == 3) //wyp³ata
+		else if (b == 3) //wypï¿½ata
 		{
-			System.out.print("wprowad¿ kwotê wyp³aty:");
+			System.out.print("wprowadï¿½ kwotï¿½ wypï¿½aty:");
 			c = scanner.nextInt();
 			if (c >= 10 && c <= card[0].getIleKasy())
 			{
 			card[0].withdrow(c);
-			System.out.println("wyp³acono " + c + "z³");
-			System.out.println("stan konta po " + card[0].getIleKasy() + "z³");
+			System.out.println("wypï¿½acono " + c + "zï¿½");
+			System.out.println("stan konta po " + card[0].getIleKasy() + "zï¿½");
 			}
 			else if (c > card[0].getIleKasy())
 			{
-			System.out.println("niewystarczaj¹ce œrodki");
+			System.out.println("niewystarczajï¿½ce ï¿½rodki");
 			}
 			else
 			System.out.println("za niska kwota");
 			
 		}
 		else
-			System.out.println("z³a wartoœæ");
+			System.out.println("zï¿½a wartoï¿½ï¿½");
 		
 	}
 
 	else
-		System.out.println("karta nieprawid³owa, spróbuj ponownie");
+		System.out.println("karta nieprawidï¿½owa, sprï¿½buj ponownie");
 	
 	
 
