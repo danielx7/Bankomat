@@ -25,6 +25,7 @@ public class Bankomat {
 			this.ileKasy -=ile;
 	}
 	
+
 	public static void main (String arg[])
 	{
 		
@@ -36,8 +37,7 @@ public class Bankomat {
 		
 		Scanner scanner = new Scanner(System.in);
 		System.out.print("wprowadz 3-cyfrowy nr karty:");
-		a = scanner.nextInt();
-	
+		try {a = scanner.nextInt();
 
 	if (a > 99 && a < 1000)
 	{	System.out.println("1 - stan konta");
@@ -45,7 +45,8 @@ public class Bankomat {
 		System.out.println("3 - wyp³aæ");
 		System.out.print("wybierz:");
 		b = scanner.nextInt();
-	
+		System.out.println("wybrano " + b);
+		
 		if (b == 1) //stan konta
 		{
 			System.out.println(card[0].getIleKasy() + "z³");
@@ -91,8 +92,12 @@ public class Bankomat {
 		System.out.println("karta nieprawid³owa, spróbuj ponownie");
 	
 	
+
+	} catch (Exception e) {
+		System.out.println("An error occurred");
+	}
+
+	}
 }
 
-
-}
 
