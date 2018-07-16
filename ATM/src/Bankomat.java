@@ -87,14 +87,14 @@ public class Bankomat {
 			System.out.println("z³a wartoœæ");
 		
 	}
-	
+
 	else
 		System.out.println("karta nieprawid³owa, spróbuj ponownie");
 	
 	
 
 	} catch (Exception e) {
-		System.out.println("An error occurred");
+		System.out.println("An error occurred - only digits alowed");
 	}
 
 	}
