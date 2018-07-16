@@ -11,7 +11,7 @@ public class Bankomat {
 	
 	double getIleKasy()
 	{
-		
+		 
 		return ileKasy;
 	}
 	
@@ -88,7 +88,7 @@ public class Bankomat {
 	}
 	
 	else
-		System.out.println("karta nieprawid³owa, koniec programu");
+		System.out.println("karta nieprawid³owa, spróbuj ponownie");
 	
 	
 }
