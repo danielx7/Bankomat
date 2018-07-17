@@ -1,7 +1,9 @@
-class Wpłata extends Transakcja
+class Wplata extends Transakcja
 {
       
-    String numerKontaPłacącegoPrzelewem;
+
+	}
+	String numerKontaPrzyjmujacegoPrzelewem;
     String numerKasieraPrzyjmujacegoGotowke;
 
 

@@ -1,6 +1,6 @@
 
 class KontoBankowe{
-    private String dataZałożnia;
+    private String dataZalogowania;
     private String numerKlienta;
     private double saldo;
     private String waluta;

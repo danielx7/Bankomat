@@ -41,55 +41,55 @@ public class Bankomat {
 
 	if (a > 99 && a < 1000)
 	{	System.out.println("1 - stan konta");
-		System.out.println("2 - wpï¿½aï¿½");
-		System.out.println("3 - wypï¿½aï¿½");
+		System.out.println("2 - wplata");
+		System.out.println("3 - wyplata");
 		System.out.print("wybierz:");
 		b = scanner.nextInt();
 		System.out.println("wybrano " + b);
 		
 		if (b == 1) //stan konta
 		{
-			System.out.println(card[0].getIleKasy() + "zï¿½");
+			System.out.println(card[0].getIleKasy() + "zl½");
 		}
 		
-		else if (b == 2) //wpï¿½ata
+		else if (b == 2) //wplata
 		{
-			System.out.print("wprowadï¿½ kwotï¿½ wpï¿½aty:");
+			System.out.print("wprowadz kwote wplaty:");
 			c = scanner.nextInt();
-			if (c >= 10)
+			if (c >= 10 )
 			{card[0].add(c);
-			System.out.println("wpï¿½acono " + c + "zï¿½");
-			System.out.println("stan konta po " + card[0].getIleKasy() + "zï¿½");
+			System.out.println("wprowadzono " + c + "zl");
+			System.out.println("stan konta po " + card[0].getIleKasy() + "zl");
 			}
 			else 
 			System.out.println("za niska kwota");
 		}
 		
-		else if (b == 3) //wypï¿½ata
+		else if (b == 3) //wyplata
 		{
-			System.out.print("wprowadï¿½ kwotï¿½ wypï¿½aty:");
+			System.out.print("wprowadz kwote wyplaty:");
 			c = scanner.nextInt();
 			if (c >= 10 && c <= card[0].getIleKasy())
 			{
 			card[0].withdrow(c);
-			System.out.println("wypï¿½acono " + c + "zï¿½");
-			System.out.println("stan konta po " + card[0].getIleKasy() + "zï¿½");
+			System.out.println("wyplacono " + c + "zl");
+			System.out.println("stan konta po " + card[0].getIleKasy() + "zl");
 			}
 			else if (c > card[0].getIleKasy())
 			{
-			System.out.println("niewystarczajï¿½ce ï¿½rodki");
+			System.out.println("niewystarczajace srodki");
 			}
 			else
 			System.out.println("za niska kwota");
 			
 		}
 		else
-			System.out.println("zï¿½a wartoï¿½ï¿½");
+			System.out.println("zla wartosc");
 		
 	}
 
 	else
-		System.out.println("karta nieprawidï¿½owa, sprï¿½buj ponownie");
+		System.out.println("karta nieprawidlowa, sprobuj ponownie");
 	
 	
 
