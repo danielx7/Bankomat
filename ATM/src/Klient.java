@@ -1,10 +1,11 @@
+import java.awt.List;
 
 class Klient{
  String imie;
  String nazwisko;
  String numerKlienta;
- List<String> numeryKont;
+ List numeryKont ;
 
- public Kclient(){};
+ public Klient(){};
 
 }

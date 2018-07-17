@@ -1,4 +1,4 @@
-class Wypłata extends Transakcja
+class Wyplata extends Transakcja
 {
      
     String numerKontaDocelowego;
